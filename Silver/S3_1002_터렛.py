@@ -5,11 +5,11 @@ def calculation(x,y,r1,r2):
     distance=math.sqrt(x**2+y**2)
     rMax=max(r1,r2)
     rMin=min(r1,r2)
-    if distance>r1+r2 or distance+rMin<rMax:
+    if distance>r1+r2 or distance+rMin<rMax: #안만날때
         return 0
-    elif distance==r1+r2 or distance+rMin==rMax:
+    elif distance==r1+r2 or distance+rMin==rMax: #한 점에서 만날때
         return 1
-    else:
+    else: #두 점에서 만날때
         return 2
 
 t=input()
