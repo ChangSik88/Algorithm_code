@@ -1,0 +1,16 @@
+import sys
+from math import factorial
+from collections import deque
+t=sys.stdin.readline()
+anw=deque()
+if t:
+    t=int(t)
+    for i in range(t):
+        n,m=map(int,sys.stdin.readline().split())
+        tem=int((factorial(m))/(factorial(n)*factorial(m-n)))
+        anw.append(tem)
+    while anw:
+        print(anw.popleft())
+
+
+
