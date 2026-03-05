@@ -12,6 +12,6 @@ if t:
         anw.append(tem)
     while anw:
         print(anw.popleft())
-
+#푸시용 주석
 
 
